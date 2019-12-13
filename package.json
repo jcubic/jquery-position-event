@@ -1,0 +1,28 @@
+{
+  "name": "jquery-position-event",
+  "version": "0.1.0",
+  "description": "jQuery cursor position change event",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcubic/jquery-position-event.git"
+  },
+  "keywords": [
+    "event",
+    "jquery",
+    "position",
+    "textarea",
+    "input"
+  ],
+  "author": "Jakub T. Jankiewicz <jcubic@onet.pl> (https://jcubic.pl/jakub-jankiewicz/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcubic/jquery-position-event/issues"
+  },
+  "homepage": "https://github.com/jcubic/jquery-position-event#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
