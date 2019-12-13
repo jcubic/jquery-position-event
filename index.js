@@ -36,6 +36,10 @@
         factory(root.jQuery);
     }
 })(function($, undefined) {
+    var namespace = 'cursor_position_' + Math.floor(Math.random() * 10000);
+    var events = ['keyup', 'focus', 'click'].map(function(e) {
+        return e + '.' + namespace;
+    }).join(' ');
     // ------------------------------------------------------------------------
     function getCursorPosition(element) {
         // ref: https://stackoverflow.com/a/19803814/387194
@@ -53,7 +57,7 @@
         return pos;
     }
     // ------------------------------------------------------------------------
-    var re_line_begin = /(?:^|\n)([^\n]*)$/
+    var re_line_begin = /(?:^|\n)([^\n]*)$/;
     // ------------------------------------------------------------------------
     $.fn.on_cursor_position = function(action, callback) {
         if (action === 'unbind') {
@@ -87,8 +91,6 @@
                         callbacks = $.Callbacks();
                         callbacks.add(callback);
                         var pos;
-                        var events = 'keyup.cursor_position focus.cursor_' +
-                            'position click.cursor_position';
                         self.on(events, function(e) {
                               var new_pos = getCursorPosition(self);
                               if (new_pos !== pos) {
@@ -113,7 +115,7 @@
             $(this).on_cursor_position(handleObj.handler);
         },
         trigger: function(event, data) {
-            $(this).trigger('click');
+            $(this).trigger('click.' + namespace);
             return false;
         },
         remove: function(handleObj) {
