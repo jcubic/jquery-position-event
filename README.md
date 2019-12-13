@@ -1,7 +1,8 @@
 # jquery-position-event
 jQuery cursor position change event
 
-[![npm](https://img.shields.io/badge/npm-0.1.0-blue.svg)](https://www.npmjs.com/package/jquery-position-event)
+[![npm](https://img.shields.io/badge/npm-0.1.0-yellow.svg)](https://www.npmjs.com/package/jquery-position-event)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jcubic/jquery-position-event/blob/master/LICENSE)
 
 [Demo](https://codepen.io/jcubic/pen/GRgjgad)
 
