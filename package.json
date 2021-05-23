@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/jcubic/jquery-position-event#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.6.0"
   }
 }
